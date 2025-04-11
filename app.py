@@ -4,13 +4,13 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def home():
     return render_template("index.html")
 
 @app.route("/contatos")
-def about():
+def contatos():
     return render_template("contatos.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="192.168.15.16", port=5000)
+    app.run()
