@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página inicial do portfólio de Leandro Bologna Corso">
-    <title>HomePage - Portfólio</title>
+    <meta name="description" content="Homepage do portfólio de Fábio de Marco Corso">
+    <title>Homepage - Portfólio</title>
     <style>
         body {
-            background-color: #87CEEB;
+            background-color: #8d979b;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -20,28 +20,60 @@
 
         div {
             text-align: center;
-            color: white;
+            color: #ffffff;
+            background-color: #4a5a60;
+            /* Fundo da caixa */
+            padding: 20px;
+            /* Espaçamento interno */
+            border: 2px solid #ffffff;
+            /* Borda branca */
+            border-radius: 10px;
+            /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Sombra para destaque */
         }
 
-        button {
+        a {
+            color: #046319;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: #046319;
+            /* Cor de fundo do botão */
+            color: #ffffff;
+            /* Cor do texto */
+            text-decoration: none;
+            font-weight: bold;
             padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #167919;
-            color: white;
-            border: none;
+            /* Espaçamento interno */
             border-radius: 5px;
+            /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            /* Sombra do botão */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            /* Transições suaves */
+        }
+
+        .button-link:hover {
+            background-color: #068b18;
+            /* Cor de fundo ao passar o mouse */
+            transform: scale(1.05);
+            /* Leve aumento ao passar o mouse */
         }
     </style>
 </head>
 
 <body>
     <div>
-        <h1>HomePage</h1>
-        <p>Bem-vindo ao meu portfólio!</p>
-        <a href="/contatos">
-            <button>Ir para Contatos</button>
-        </a>
+        <h1>Bem-vindo ao meu Portfólio</h1>
+        <p>Para mais informações, clique no botão a baixo!</p>
+        <p><a href="/contatos" class="button-link">Página de Contatos</a></p>
     </div>
 </body>
 

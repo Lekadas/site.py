@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de contatos do portfólio de Leandro Bologna Corso">
+    <meta name="description" content="Página de contatos do portfólio de Fábio de Marco Corso">
     <title>Contatos - Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background-color: #f5f5f5;
+            background-color: #8d979b;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -16,31 +18,113 @@
             align-items: center;
             height: 100vh;
         }
+
         div {
             text-align: center;
-            color: #333;
+            color: #ffffff;
+            background-color: #4a5a60;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         a {
-            color: #0077b5;
+            color: #072e83;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .button-link {
-            color: #4CAF50;
+
+        .whatsapp-button,
+        .linkedin-button,
+        .pdf-button {
+            display: inline-block;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+            transform: scale(1.05);
+        }
+
+        .linkedin-button {
+            background-color: #0077b5;
+        }
+
+        .linkedin-button:hover {
+            background-color: #005582;
+            transform: scale(1.05);
+        }
+
+        .pdf-button {
+            background-color: #e74c3c;
+        }
+
+        .pdf-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-button i,
+        .linkedin-button i,
+        .pdf-button i {
+            margin-right: 8px;
+        }
+
+        .email-button {
+            display: inline-block;
+            background-color: #f39c12; /* Cor do botão */
+            color: #ffffff; /* Cor do texto */
+            font-weight: bold;
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+            text-decoration: none;
+        }
+
+        .email-button i {
+            margin-right: 8px; /* Espaço entre o ícone e o texto */
         }
     </style>
 </head>
+
 <body>
     <div>
         <h1>Contatos</h1>
-        <p><strong>Número:</strong> (11) 94087-6963</p>
-        <p><strong>E-mail:</strong> bolognacorsoleandro@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leandro-bologna-corso-5469a51b4/" target="_blank">https://www.linkedin.com/in/leandro-bolognacorso/</a></p>
-        <p><a href="/static/curriculo.pdf" target="_blank" class="button-link">Baixar Currículo (PDF)</a></p>
+        <p>
+            <a href="https://wa.me/5511940876963" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Entrar em Contato
+            </a>
+        </p>
+        <p>
+            <span class="email-button">
+                <i class="fab fa-google"></i> bolognacorsoleandro@gmail.com
+            </span>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/leandro-bologna-corso-5469a51b4/" target="_blank" class="linkedin-button">
+                <i class="fab fa-linkedin"></i> Acessar LinkedIn
+            </a>
+        </p>
+        <p>
+            <a href="/static/curriculo.pdf" target="_blank" class="pdf-button">
+                <i class="fas fa-file-pdf"></i> Baixar Currículo (PDF)
+            </a>
+        </p>
     </div>
 </body>
+
 </html>
