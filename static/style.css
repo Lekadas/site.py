@@ -70,21 +70,27 @@ a:hover {
 
 .whatsapp-button i,
 .linkedin-button i,
-.pdf-button i {
+.pdf-button i,
+.email-button i {
     margin-right: 8px;
 }
 
 .email-button {
     display: inline-block;
-    background-color: #f39c12;
     color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+    background-color: #f39c12;
+    /* Cor inicial do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.email-button i {
-    margin-right: 8px;
+.email-button:hover {
+    background-color: #d68910;
+    /* Cor ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de zoom */
 }
