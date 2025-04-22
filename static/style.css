@@ -1,19 +1,19 @@
 body {
     background-color: #8d979b;
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 div {
     text-align: center;
     color: #ffffff;
     background-color: #4a5a60;
-    padding: 20px;
+    padding: 55px;
     border: 2px solid #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -72,7 +72,7 @@ a:hover {
 .linkedin-button i,
 .pdf-button i,
 .email-button i {
-    margin-right: 8px;
+    margin-right: 20px;
 }
 
 .email-button {
@@ -93,4 +93,40 @@ a:hover {
     /* Cor ao passar o mouse */
     transform: scale(1.05);
     /* Efeito de zoom */
+}
+
+.button-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1009cf; /* Cor inicial do botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0px; /* Espaçamento entre os botões */ 
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.button-link:hover {
+    background-color: #313ae7; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.github-button {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333333; /* Cor inicial do botão (preto do GitHub) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+    background-color: #24292e; /* Cor ao passar o mouse (cinza escuro do GitHub) */
+    transform: scale(1.05); /* Efeito de zoom */
 }
